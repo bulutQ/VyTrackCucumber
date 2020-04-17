@@ -38,22 +38,4 @@ public class DriverReturn {
             WebDriverManager.edgedriver().setup();
             return new EdgeDriver();
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  */

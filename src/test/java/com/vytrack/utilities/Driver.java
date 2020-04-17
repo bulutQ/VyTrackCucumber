@@ -9,12 +9,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Driver {
     //same for everyone
     private static WebDriver driver;
-    //so noone can create object of class
+    //so none can create object of class
     //everyone should call static getter method instead
     private Driver (){
     }
 
-//SYNC Enabbles multi-threading works little slower but make sure
+//SYNC Enables multi-threading works little slower but make sure
     //two different method can access here at the same time
     public synchronized static WebDriver getDriver() {
         if(driver==null){

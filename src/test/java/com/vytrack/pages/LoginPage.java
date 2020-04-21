@@ -55,7 +55,7 @@ public class LoginPage extends PageBase {
       login.click();
   }
 
-  //Loging Method #2 using properties file.
+  //Login Method #2 using properties file.
     //login as default user stated in properties file
   public void login()
   {
@@ -64,7 +64,20 @@ public class LoginPage extends PageBase {
       BrowserUtilities.waitForPageToLoad(10);
   }
 
-
+  public void login(String username){
+      switch (username) {
+          case "sales manager":
+              login(ConfigurationReader.getProperty("sales_manager"), ConfigurationReader.getProperty("password"), false);
+              break;
+          case "store manager":
+              login(ConfigurationReader.getProperty("store_manager"), ConfigurationReader.getProperty("password"), false);
+              break;
+          case "driver":
+              login(ConfigurationReader.getProperty("driver"), ConfigurationReader.getProperty("password"), false);
+              break;
+      }
   }
+
+}
 
 

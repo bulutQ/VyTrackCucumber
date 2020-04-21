@@ -26,6 +26,7 @@ public class BrowserUtilities {
         return textValues;
     }
 
+
     /**
      * Pause test for some time
      *

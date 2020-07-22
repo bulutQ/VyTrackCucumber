@@ -21,6 +21,9 @@ Feature: Login
 #    Then user should verify title is a dashboard
 #
 #  @store_manager
+
+
+
 #  Scenario: Login as store manager and verify that title is Dashboard
 #    When user logs in as a store manager
 #    Then user should verify title is a dashboard
